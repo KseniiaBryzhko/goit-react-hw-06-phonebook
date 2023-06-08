@@ -1,13 +1,11 @@
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { ContactList } from 'components/ContactList/ContactList';
 import { Filter } from 'components/Filter/Filter';
-// import { nanoid } from 'nanoid';
 import css from './App.module.css';
-// import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact, removeContact } from 'redux/actions';
+import { addContact, removeContact } from 'redux/contactsSlice';
 import { getContacts, getFilter, getFilteredContacts } from 'redux/selectors';
-import { setFilter } from 'redux/actions';
+import { setFilter } from 'redux/filtersSlice';
 
 export const App = () => {
   const dispatch = useDispatch();
